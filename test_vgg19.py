@@ -5,6 +5,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 # import torchvision.models as models
 import utils
+import argparse
+
+parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Transfer Learning from ImageNet')
+parser.add_argument('--test', default='./test_data/tiger.jpeg', help='transfer learning file path')
+args = parser.parse_args()
 
 vgg19_npy_path = './vgg19.npy'
 
@@ -155,7 +160,7 @@ model = VGGnet()
 model.cuda()
 model.eval()
 
-image = utils.load_image("./test_data/tiger.jpeg")
+image = utils.load_image(args.test)
 image = image[:, :, ::-1]
 VGG_MEAN = np.array([103.939, 116.779, 123.68])
 image = (image * 255.0) - VGG_MEAN
