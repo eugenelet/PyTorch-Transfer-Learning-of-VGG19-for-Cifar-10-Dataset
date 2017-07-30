@@ -24,13 +24,20 @@ Prediction made on per epoch basis.
 
 161 epochs takes about 3h on GTX 1080.
 
+#### Retrain Model:
 ```sh
 python train.py
 ```
 
 #### Make prediction:
+##### Using Model Zoo
 ```sh
 python test.py
+```
+
+##### Using vgg19.npy
+```sh
+python test_vgg19.py
 ```
 
 ## Tensorboard
@@ -42,4 +49,4 @@ tensorboard --logdir=./tensorboard
 [Apache License 2.0](https://github.com/eugenelet/tensorflow-cifar-10-NiN/blob/master/LICENSE)
 
 ## Implementation Details
-[My Blog](https://embedai.wordpress.com/2017/07/23/network-in-network-implementation-using-tensorflow/)
+[My Blog](https://embedai.wordpress.com/2017/07/30/transfer-learning-of-vgg19-on-cifar-10-dataset-using-pytorch/)
