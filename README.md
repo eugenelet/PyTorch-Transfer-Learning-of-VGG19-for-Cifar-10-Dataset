@@ -46,7 +46,7 @@ tensorboard --logdir=./tensorboard
 ```
 
 ## License
-[Apache License 2.0](https://github.com/eugenelet/tensorflow-cifar-10-NiN/blob/master/LICENSE)
+[Apache License 2.0](https://github.com/eugenelet/PyTorch-Transfer-Learning-of-VGG19-for-Cifar-10-Dataset/blob/master/LICENSE)
 
 ## Implementation Details
 [My Blog](https://embedai.wordpress.com/2017/07/30/transfer-learning-of-vgg19-on-cifar-10-dataset-using-pytorch/)
